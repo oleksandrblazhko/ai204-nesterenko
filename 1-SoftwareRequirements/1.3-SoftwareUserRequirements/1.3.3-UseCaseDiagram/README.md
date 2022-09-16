@@ -1,2 +1,2 @@
 Діаграма прецедентів програмного продукту
-[UseCases](UseCase.png)
+![UseCases](UseCase.png)
