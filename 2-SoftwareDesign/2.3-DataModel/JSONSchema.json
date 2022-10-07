@@ -1,0 +1,91 @@
+{
+  "description": "Опис предметної області ПП",
+  "type": "object",
+  "properties": {
+    "customer": {
+      "description": "Користувач",
+      "type": "object",
+      "properties": {
+        "email": {
+          "description": "Email користувача"
+        },
+        "password": {
+          "description": "Пароль користувача"
+        },
+        "water": {
+          "description": "Випита вода",
+          "type": "object",
+          "properties": {
+            "volume": {
+              "description": "Об'єм води"
+            }
+          },
+          "required": [
+            "volume"
+          ]
+        },
+        "poetry": {
+          "description": "Вірш",
+          "type": "object",
+          "properties": {
+            "poetryText": {
+              "description": "Текст віршу"
+            }
+          },
+          "required": [
+            "poetryText"
+          ]
+        },
+        "cardDetails": {
+          "description": "Дані про карту",
+          "type": "object",
+          "properties": {
+            "number": {
+              "description": "Номер карти"
+            },
+            "cvv": {
+              "description": "CVV"
+            }
+          },
+          "required": [
+            "number",
+            "cvv"
+          ]
+        },
+        "address": {
+          "description": "Адреса",
+          "type": "object",
+          "properties": {
+            "addressClient": {
+              "description": "Адреса клієнта"
+            }
+          },
+          "required": [
+            "addressClient"
+          ]
+        },
+        "psycho": {
+          "description": "Стан",
+          "type": "object",
+          "properties": {
+            "status": {
+              "description": "Емоційний стан дня"
+            }
+          },
+          "required": [
+            "status"
+          ]
+        }
+      },
+      "required": [
+        "email",
+        "password",
+        "psycho",
+        "address",
+        "cardDetails",
+        "poetry",
+        "water"
+      ]
+    }
+  }
+}
