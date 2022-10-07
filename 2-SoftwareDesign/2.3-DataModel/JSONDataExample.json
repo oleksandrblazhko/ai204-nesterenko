@@ -1,0 +1,22 @@
+{
+  "customer": {
+    "email": "test@gmail.com",
+    "password": "12345678",
+    "water": {
+      "volume": "4"
+    },
+    "poetry": {
+      "poetryText": "Якщо вірша нема, то це життя хіба?"
+    },
+    "cardDetails": {
+      "number": "1234567890121234",
+      "cvv": "344"
+    },
+    "address": {
+      "addressClient": "Грецька,1"
+    },
+    "psycho": {
+      "status": "ok"
+    }
+  }
+}
