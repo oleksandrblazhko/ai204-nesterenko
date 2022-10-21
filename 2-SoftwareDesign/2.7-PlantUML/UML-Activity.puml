@@ -1,0 +1,28 @@
+@startuml
+
+title Example of Activity Diagram 
+
+start
+
+:Користувач авторизується; 
+:Ввод випитої води;
+:Ввод стану;
+:Ввод вірша;
+
+if (Придбати воду?) then (yes)
+  :Ввод даних карти;
+    if (Неправильні дані?) then (yes)
+      :Помилка;
+       stop
+    else (no)
+       :Ввод адреси;
+       :Зберігання даних;
+      endif
+      stop
+else (no)
+  :Зберігання даних;
+endif
+
+stop
+
+@enduml
