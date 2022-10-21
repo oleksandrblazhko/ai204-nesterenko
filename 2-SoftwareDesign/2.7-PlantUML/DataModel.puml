@@ -1,0 +1,38 @@
+@startuml
+
+title Relation Schema
+
+hide circle
+
+entity "Користувач" as user {
+    (PK) user_id
+    --
+    Пошта
+    Пароль
+}
+
+entity "Вода" as water {
+    (PK) water_id
+    --
+    (FK) user_id
+    Випито
+}
+entity "Дані" as data {
+    (PK) data_id
+    --
+    (FK) user_id
+    Номер карти
+    CVV
+}
+entity "Адреса" as address {
+    (PK) address_id
+    --
+    (FK) data_id
+    Адреса
+}
+
+user --{ water
+user -- data
+data -- address
+
+@enduml

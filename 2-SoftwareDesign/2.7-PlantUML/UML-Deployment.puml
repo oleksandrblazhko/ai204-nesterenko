@@ -1,0 +1,23 @@
+@startuml uml2
+
+title Deployment for information System
+
+left to right direction
+
+node "<< Настільний комп'ютер >>" as pc {
+	node "<< ОС Windows >>" {
+               node "<<Веб навігатор>>" {
+		component [~*.js\n(React)]
+               }
+	}
+}
+
+interface "Клавіатура" as keyboard
+interface "Маніпулятор "Миша" " as mouse
+
+keyboard- pc
+pc -- mouse
+
+
+
+@enduml

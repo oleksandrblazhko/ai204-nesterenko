@@ -1,0 +1,12 @@
+@startuml
+actor User
+rectangle Software{
+:User: --> (Buy)
+:User: --> (SaveData)
+"Купити преміум" as (Buy)
+"Записати дані" as (SaveData)
+
+    usecase (Обробка Касою)
+   (Обробка Касою) .> (Buy) : extends
+}
+@enduml
