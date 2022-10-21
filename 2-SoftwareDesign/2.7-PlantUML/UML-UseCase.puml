@@ -1,5 +1,5 @@
 @startuml
-skinparam actorStyle awesome
+actor User
 rectangle Software{
 :User: --> (Buy)
 :User: --> (SaveData)
