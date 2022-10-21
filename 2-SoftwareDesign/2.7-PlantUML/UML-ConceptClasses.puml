@@ -1,0 +1,28 @@
+@startuml uml3
+
+title Concept Classes Diagram
+
+skinparam linetype ortho
+
+Class "Користувач" as user {
+    Пошта
+    Пароль
+}
+Class "Вода" as water {
+    Випито
+}
+Class "Дані" as data {
+    Номер карти
+    СVV
+}
+Class "Адреса" as address{
+    Адреса
+}
+
+
+user"*" --> "1"water : надає
+user"*" --> "1"data : придбає преміум
+data"1" o--> "1"address
+
+
+@enduml
